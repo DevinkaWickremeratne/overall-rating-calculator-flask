@@ -37,9 +37,9 @@ def calculate_overall_rating():
             if reviews:
                 ratings = [review.rating for review in reviews]
                 average_rating = sum(ratings) / len(ratings)
-                print(f"Overall rating for conference {conference.id}: {average_rating}")
+                print(f"Rating for conference {conference.id}: {average_rating}")
             else:
-                print(f"No reviews found for conference {conference.id}")
+                print(f"No reviews were found for conference {conference.id}")
 
 if __name__ == "__main__":
     calculate_overall_rating()
